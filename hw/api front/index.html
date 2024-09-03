@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Все книги</h2>
+
+    <button class="button" onclick='getBooks()'>Получить все книги</button>
+
+    <div class="books">
+
+    </div>
+    <hr>
+
+    <h2>Создать книгу</h2>
+    
+    <form class="form" id="createBookForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="date" id="year" placeholder="Year" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="number" id="count" placeholder="Count" required>
+        <button onclick="createBook(event)" class="button" type="submit">Добавить книгу</button>
+    </form>
+    
+    <hr>
+
+    <h2>Изменить книгу</h2>
+
+    <form class="form" id="updateBookForm">
+        <input type="number" id="updateId" placeholder="Book ID" required>
+        <input type="text" id="updateName" placeholder="Name">
+        <input type="text" id="updateAuthor" placeholder="Author">
+        <input type="date" id="updateYear" placeholder="Year">
+        <input type="number" id="updatePrice" placeholder="Price">
+        <input type="number" id="updateCount" placeholder="Count">
+        <button onclick="updateBook(event)" class="button" type="submit">Изменить книгу</button>
+    </form>
+
+    <hr>
+
+    <h2>Удалить книгу</h2>
+
+    <form  class="form" id="deleteBookForm">
+        <input type="number" id="deleteId" placeholder="Book ID" required>
+        <button onclick="deleteBook(event)" class="button" type="submit">Удалить книгу</button>
+    </form>
+
+</body>
+<script src="script.js"></script>
+</html>

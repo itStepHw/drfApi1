@@ -1,0 +1,28 @@
+.book{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+}
+.books{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button{
+    border: none;
+    outline: none;
+    background-color: rgb(177, 177, 177);
+    padding: 10px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
